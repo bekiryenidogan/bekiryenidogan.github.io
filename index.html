@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bekir Yenidoğan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Signika+Negative:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/js/bootstrap.min.js"
+      integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/js/bootstrap.bundle.min.js"
+      integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-2 border-secondary"
+      style="--bs-border-opacity: 0.2"
+    >
+      <div class="container justify-content-center">
+        <a class="navbar-brand logoimg" href="#">
+          <!-- <img
+            src="images/icon_chain.png"
+            alt=""
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          /> -->
+          <i class="fa-solid fa-football fa-lg logoimg me-1"></i>
+          Bekir Yenidoğan
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/bekiryenidogan/bekiryenidogan.github.io"
+                target="_blank"
+                rel="noreferrer"
+                ><i class="fa-brands fa-github"></i> Source</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="lightSwitch"
+              style="transform: scale(1.3)"
+            />
+            <i class="fa-solid fa-sun fa-lg mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center">
+      <canvas id="c"></canvas>
+    </div>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col d-flex align-items-center justify-content-center mb-3">
+          <p
+            class="bg-secondary px-5 pt-2 pb-2 rounded text-center"
+            style="--bs-bg-opacity: 0.2"
+          >
+            Hi, I am a developer based in Istanbul!
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-3 text-left">
+          <h1>Bekir Yenidoğan</h1>
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase"></i> I am currently open for job
+            offers
+          </p>
+        </div>
+        <div
+          class="col-sm-1 d-flex align-items-center justify-content-center pb-4"
+        >
+          <img
+            src="images/profile.png"
+            class="rounded-circle h-100 w-100 border border-5 border-secondary"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-2 mb-3">
+          <div class="row">
+            <h5
+              class="border-bottom border-2 border-secondary pb-1 mb-2 mt-3 d-flex align-items-center justify-content-center"
+              style="--bs-border-opacity: 0.2"
+            >
+              Resume
+            </h5>
+          </div>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div
+              class="col-sm-6 d-flex align-items-center justify-content-center customfont"
+            >
+              <a
+                href="https://drive.google.com/file/d/1SkMoPWAL07A2PY6z3t2GP5lcJtVQgJAT/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                type="button"
+                class="btn btn-outline-danger mx-1"
+              >
+                <i class="fa-brands fa-google-drive"></i>
+                Turkish
+              </a>
+              <a
+                href="https://drive.google.com/file/d/15dcx23mkHtKz0zbBfBoCsG4wyVAMQOyV/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                type="button"
+                class="btn btn-outline-primary mx-1"
+              >
+                <i class="fa-brands fa-google-drive"></i>
+                English
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5">
+          <h4
+            class="border-bottom border-5 border-secondary pb-1 mb-2 mt-3"
+            style="--bs-border-opacity: 0.2"
+          >
+            About
+          </h4>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5 d-flex align-items-center justify-content-center">
+          <p>
+            Due to my interest in programming at university and before, I
+            learned object-oriented programming and I tried to improve myself on
+            databases. With my university education on data science I have done
+            assignments and studies. Because of my curiosity in the Web3 area, I
+            have learned how blockchains and I have developed myself in smart
+            contract development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5">
+          <h4
+            class="border-bottom border-5 border-secondary pb-1 mb-2 mt-3"
+            style="--bs-border-opacity: 0.2"
+          >
+            Bio
+          </h4>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-1">
+          <h5 class="text-secondary">1997</h5>
+        </div>
+        <div class="col-sm-4">
+          <p>Born in Istanbul, Turkey</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-1">
+          <h5 class="text-secondary">2019</h5>
+        </div>
+        <div class="col-sm-4">
+          <p>
+            Completed the Associate's Degree Computer Programming at Trakya
+            University
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-1">
+          <h5 class="text-secondary">2022</h5>
+        </div>
+        <div class="col-sm-4 text-left">
+          <p>
+            Completed the Bachelor's Degree in Statistics at Mimar Sinan Fine
+            Arts University
+          </p>
+        </div>
+      </div>
+
+      <!-- I ♥ -->
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5">
+          <h4
+            class="border-bottom border-5 border-secondary pb-1 mb-2 mt-3"
+            style="--bs-border-opacity: 0.2"
+          >
+            I ♥
+          </h4>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5 d-flex align-items-center justify-content-left">
+          <p>
+            <i
+              class="fa-solid fa-person-running border rounded-5 px-2 py-2 border-secondary border-2 me-1"
+              style="--bs-border-opacity: 0.2"
+            ></i>
+            Basketball, Tennis, Boxing
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5 d-flex align-items-center justify-content-left">
+          <p>
+            <i
+              class="fa-solid fa-book border rounded-5 px-2 py-2 border-secondary border-2 me-1"
+              style="--bs-border-opacity: 0.2"
+            ></i>
+            Blockchain, Data Science, Cryptocurrencies, De-Fi
+          </p>
+        </div>
+      </div>
+
+      <!-- On The Web -->
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-5">
+          <h4
+            class="border-bottom border-5 border-secondary pb-1 mb-3 mt-3"
+            style="--bs-border-opacity: 0.2"
+          >
+            On the Web
+          </h4>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div
+          class="col-sm-5 d-flex align-items-center justify-content-center mb-3"
+        >
+          <div class="col-sm-2">
+            <a
+              href="https://github.com/bekiryenidogan"
+              target="_blank"
+              rel="noreferrer"
+              type="button"
+              class="btn btn-outline-primary px-4"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a
+              href="https://www.linkedin.com/in/bekir-yenidogan/"
+              target="_blank"
+              rel="noreferrer"
+              type="button"
+              class="btn btn-outline-primary px-4"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a
+              href="https://www.instagram.com/bekiryenidogan/"
+              target="_blank"
+              rel="noreferrer"
+              type="button"
+              class="btn btn-outline-primary px-4"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a
+              href="https://twitter.com/bekiryenidogan"
+              target="_blank"
+              rel="noreferrer"
+              type="button"
+              class="btn btn-outline-primary px-4"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- <div class="col mt-3">
+        <footer class="mt-auto text-white-50 text-center pt-3">
+          <p>
+            ♥ Thanks for the tutorial
+            <a href="https://twitter.com/mdo" class="text-white"
+              >Takuya Matsuyama</a
+            >.
+          </p>
+        </footer>
+      </div> -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://threejs.org/build/three.module.js",
+          "three/addons/": "https://threejs.org/examples/jsm/"
+        }
+      }
+    </script>
+    <!-- Remove this when import maps will be widely supported -->
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script>
+    <script src="switch.js"></script>
+    <script type="module" src="object.js"></script>
+  </body>
+</html>

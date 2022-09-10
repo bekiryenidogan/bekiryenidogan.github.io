@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Anton", sans-serif;
+}
+
+a,
+button,
+p {
+  font-family: "Signika Negative", sans-serif;
+}
+
+.customfont {
+  font-family: "Signika Negative", sans-serif;
+}
+
+.logoimg {
+  font-family: "Anton", sans-serif;
+}
+
+.logoimg img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.logoimg:hover img {
+  transform: rotate(30deg);
+}
+
+.logoimg i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.logoimg:hover i {
+  transform: rotate(30deg);
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
